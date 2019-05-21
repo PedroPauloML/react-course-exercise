@@ -5,8 +5,12 @@ import { Text, StyleSheet } from "react-native"
 import Simples from "./components/Simples"
 import Parimpar from "./components/Parimpar"
 import { Inverter, MegaSena } from "./components/Multi"
+import Contador from "./components/Contador"
 
 export default createDrawerNavigator({
+  Contador: {
+    screen: () => <Contador numero={8}/>
+  },
   MegaSena: {
     screen: () => <MegaSena numeros={8}/>,
     navigationOptions: { title: "Mega Sena" }
