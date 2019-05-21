@@ -6,8 +6,12 @@ import Simples from "./components/Simples"
 import Parimpar from "./components/Parimpar"
 import { Inverter, MegaSena } from "./components/Multi"
 import Contador from "./components/Contador"
+import Plataformas from "./components/Plataformas"
 
 export default createDrawerNavigator({
+  Plataformas: {
+    screen: () => <Plataformas/>
+  },
   Contador: {
     screen: () => <Contador numero={8}/>
   },
